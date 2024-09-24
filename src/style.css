@@ -92,10 +92,6 @@ body {
 
 
 
-
-
-
-
 /* about me section */
 
 .about-me-section {
@@ -148,7 +144,7 @@ body {
 }
 
 .about-me-desc p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -172,39 +168,98 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* experience */
 .experience-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    background: #020024;
+    color: #fff;
+    text-align: left;
+}
+
+.experience-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    margin-right: 200px;
+}
+
+.experience-section h2 span {
+    color: #a6d0f5;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 40px;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    bottom: 40px;
+    width: 4px;
+    background: #005a9e;
+}
+
+.timeline-item {
+    margin: 30px 0;
+    position: relative;
+}
+
+.timeline-item .timeline-icon {
+    position: absolute;
+    left: 33px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #005a9e;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #121212;
+}
+
+.timeline-item .timeline-content {
+    padding-left: 80px;
+    position: relative;
+    top: -10px;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+
+
+
+
+/* projects */
+.projects-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    background: #005a9e;
+    color: #fff;
+    text-align: left;
+}
+
+/* blogs */
+.blogs-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -218,7 +273,7 @@ body {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
     /* intro section */
     .intro-section {
         flex-direction: column;
@@ -287,13 +342,86 @@ body {
         width: 50px;
         height: 50px;
     }
+
+    /* experience section */
+    .experience-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+        background: #020024;
+        color: #fff;
+    }
+    
+    .experience-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .timeline:before {
+        content: '';
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        bottom: 40px;
+        width: 4px;
+        background: #005a9e;
+    }
+    
+    .timeline-item {
+        margin: 30px 0;
+        position: relative;
+    }
+    
+    .timeline-item .timeline-icon {
+        position: absolute;
+        left: 33px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #005a9e;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px #121212;
+    }
+    
+    .timeline-item .timeline-content {
+        padding-left: 80px;
+        position: relative;
+        top: -10px;
+    }
+    
+    .timeline-item h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .timeline-item p {
+        font-size: 1rem;
+        opacity: 0.8;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
+    /* navbar */
+    .navbar a {
+        font-size: 1rem;
+    }
+
+
     /* intro section */
     .profile-photo {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .intro-section h1 {
@@ -302,6 +430,121 @@ body {
 
     .intro-section p {
         font-size: 1rem;
+    }
+
+    /* about me section */
+    .about-me-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .about-me-section img {
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    .about-me-desc {
+        margin-bottom: 40px;
+    }
+
+    .about-me-desc h1 {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+
+    .about-me-desc p {
+        margin-bottom: 10px;
+    }
+
+    .about-me-desc h1 span {
+        color: #020024;
+    }
+
+    .about-me-desc p span {
+        font-weight: bold;
+        color: #020024;
+    }
+
+    .about-me-contact p {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .sosmed a img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* experience section */
+    .experience-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+        background: #020024;
+        color: #fff;
+    }
+    
+    .experience-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .timeline:before {
+        content: '';
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        bottom: 40px;
+        width: 4px;
+        background: #005a9e;
+    }
+    
+    .timeline-item {
+        margin: 30px 0;
+        position: relative;
+    }
+    
+    .timeline-item .timeline-icon {
+        position: absolute;
+        left: 33px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #005a9e;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px #121212;
+    }
+    
+    .timeline-item .timeline-content {
+        padding-left: 80px;
+        position: relative;
+        top: -10px;
+    }
+    
+    .timeline-item h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .timeline-item p {
+        font-size: 0.8rem;
+        opacity: 0.8;
     }
 }
 
@@ -370,5 +613,76 @@ body {
         width: 50px;
         height: 50px;
     }
+
+    /* experience section */
+    .experience-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+        background: #020024;
+        color: #fff;
+    }
+    
+    .experience-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    
+    .timeline {
+        position: relative;
+        max-width: 800px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .timeline:before {
+        content: '';
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        bottom: 40px;
+        width: 4px;
+        background: #005a9e;
+    }
+    
+    .timeline-item {
+        margin: 30px 0;
+        position: relative;
+    }
+    
+    .timeline-item .timeline-icon {
+        position: absolute;
+        left: 33px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        background-color: #005a9e;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px #121212;
+    }
+    
+    .timeline-item .timeline-content {
+        padding-left: 80px;
+        position: relative;
+        top: -10px;
+    }
+    
+    .timeline-item h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .timeline-item p {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+    
 
 }
