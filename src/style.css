@@ -250,6 +250,7 @@ body {
 .projects-section {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 10%;
@@ -257,6 +258,106 @@ body {
     color: #fff;
     text-align: left;
 }
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #020024;
+}
+
+.projects-section h2 span {
+    color: #a6d0f5;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.project {
+    background-color: #020024;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #a6d0f5;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.project a button {
+    background-color: #a6d0f5;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: #020024;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project a button:hover {
+    background-color: #a6d0f5;
+}
+
+.btn {
+    background-color: #020024;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a6d0f5;
+    color: #020024;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* blogs */
 .blogs-section {
@@ -409,6 +510,12 @@ body {
         font-size: 1rem;
         opacity: 0.8;
     }
+
+    /* projects */
+    .projects-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @media (max-width: 810px) {
@@ -545,6 +652,20 @@ body {
     .timeline-item p {
         font-size: 0.8rem;
         opacity: 0.8;
+    }
+
+    /* projects */
+    .projects-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .project h2 {
+        font-size: 1.2rem;
+    }
+
+    .project p {
+        font-size: 0.8rem;
     }
 }
 
@@ -683,6 +804,24 @@ body {
         font-size: 0.8rem;
         opacity: 0.8;
     }
+    
+    .projects-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .project h2 {
+        font-size: 1.2rem;
+    }
+
+    .project p {
+        font-size: 0.8rem;
+    }
+
+    .project a button {
+        font-size: 0.8rem;
+    }
+
     
 
 }
