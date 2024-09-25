@@ -43,39 +43,76 @@ body {
     color: #a6d0f5;
 }
 
+/* Blog Section Styling */
+.blog-section {
+    padding: 40px 100px;
+    background-color: #020024;
+}
 
-/* projects */
-.projects-section {
+.blog-post h1 {
+    font-size: 2.5rem;
+    color: #a6d0f5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    color: #a6d0f5;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.blog-post ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.blog-post ul li {
+    margin-bottom: 10px;
+}
+
+.blog-post ul li strong {
+    color: #a6d0f5;
+}
+
+/* Blogs Section */
+.blogs-section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 10%;
-    background: #005a9e;
+    background: #020024;
     color: #fff;
     text-align: left;
 }
 
-.projects-section h2 {
+.blogs-section h2 {
     font-size: 2.5rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    color: #020024;
+    color: white;
 }
 
-.projects-section h2 span {
+.blogs-section h2 span {
     color: #a6d0f5;
 }
 
-.projects-list {
+.blogs-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
 }
 
-.project {
-    background-color: #020024;
+.blog {
+    background-color: #005a9e;
     color: #fff;
     padding: 2rem;
     border-radius: 12px;
@@ -86,30 +123,36 @@ body {
     cursor: pointer;
 }
 
-.project:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+.blog:hover {
+    transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.project h1 {
+.blog h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #a6d0f5;
 }
 
-.project p {
+.blog .date {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.blog .content {
     font-size: 1rem;
     color: #ddd;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-bottom: 1.5rem;
 }
 
-.project a button {
+.blog a button {
     background-color: #a6d0f5;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -121,12 +164,12 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.project a button:hover {
+.blog a button:hover {
     background-color: #a6d0f5;
 }
 
-.btn {
-    background-color: #020024;
+.blogs-section a {
+    background-color: #005a9e;
     color: #fff;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -139,43 +182,108 @@ body {
     color: #020024;
 }
 
+
+/* Responsive */
+
 @media (max-width: 1080px) {
-    .projects-section {
+    /* navbar */
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .blog-post h1 {
+        font-size: 2rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+
+    /* blogs section */
+    .blogs-section {
         padding-top: 100px;
         padding-bottom: 100px;
     }
 }
 
 @media (max-width: 810px) {
-    .projects-section {
+    /* navbar */
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .blog-post h1 {
+        font-size: 2rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog-post p {
+        font-size: 1rem;
+    }
+
+    /* blogs section */
+    .blogs-section {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    .project h2 {
+    .blog h2 {
         font-size: 1.2rem;
     }
 
-    .project p {
+    .blog p {
+        font-size: 0.8rem;
+    }
+
+    .blog a button {
         font-size: 0.8rem;
     }
 }
 
-@media (max-width: 480px) {
-    .projects-section {
+@media (max-width: 480px){
+    /* navbar */
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .blog-section {
+        padding: 40px 20px;
+        background-color: #020024;
+    }
+
+    .blog-post h1 {
+        font-size: 2rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog-post p {
+        font-size: 0.8rem;
+    }
+
+    .blog-post ul {
+        font-size: 0.8rem;
+    }
+
+    .blogs-section {
         padding-top: 40px;
         padding-bottom: 40px;
     }
 
-    .project h2 {
+    .blog h2 {
         font-size: 1.2rem;
     }
 
-    .project p {
+    .blog p {
         font-size: 0.8rem;
     }
 
-    .project a button {
+    .blog a button {
         font-size: 0.8rem;
     }
 }
