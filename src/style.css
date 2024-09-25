@@ -345,24 +345,11 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* blogs */
+/* Blogs Section */
 .blogs-section {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 10%;
@@ -370,6 +357,95 @@ body {
     color: #fff;
     text-align: left;
 }
+
+.blogs-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.blogs-section h2 span {
+    color: #a6d0f5;
+}
+
+.blogs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blog {
+    background-color: #005a9e;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.blog:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #a6d0f5;
+}
+
+.blog .date {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.blog .content {
+    font-size: 1rem;
+    color: #ddd;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1.5rem;
+}
+
+.blog a button {
+    background-color: #a6d0f5;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    color: #020024;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.blog a button:hover {
+    background-color: #a6d0f5;
+}
+
+.blogs-section a {
+    background-color: #005a9e;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a6d0f5;
+    color: #020024;
+}
+
 
 
 
@@ -513,6 +589,12 @@ body {
 
     /* projects */
     .projects-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /* blogs section */
+    .blogs-section {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -667,6 +749,25 @@ body {
     .project p {
         font-size: 0.8rem;
     }
+
+    /* blogs section */
+    .blogs-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .blog h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog p {
+        font-size: 0.8rem;
+    }
+
+    .blog a button {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -804,6 +905,8 @@ body {
         font-size: 0.8rem;
         opacity: 0.8;
     }
+
+    /* projects */
     
     .projects-section {
         padding-top: 40px;
@@ -819,6 +922,25 @@ body {
     }
 
     .project a button {
+        font-size: 0.8rem;
+    }
+
+    /* blogs section */
+
+    .blogs-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .blog h2 {
+        font-size: 1.2rem;
+    }
+
+    .blog p {
+        font-size: 0.8rem;
+    }
+
+    .blog a button {
         font-size: 0.8rem;
     }
 
