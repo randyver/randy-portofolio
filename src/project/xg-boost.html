@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy Verdian | Blogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#experience">Experiences</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#blogs">Blogs</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Blog Section -->
+    <section id="blogs" class="blog-section">
+        <article class="blog-post">
+            <h1>XGBoost</h1>
+            <p>
+                <strong>XGBoost</strong> (Extreme Gradient Boosting) is an optimized distributed gradient boosting library designed to be highly efficient, flexible, and portable. It is one of the most popular machine learning algorithms due to its speed and performance, especially in structured/tabular data tasks.
+            </p>
+
+            <h2>What is XGBoost?</h2>
+            <p>
+                XGBoost is a decision-tree-based ensemble algorithm that uses a gradient boosting framework. It builds models sequentially, where each new model attempts to correct errors made by the previous models. XGBoost differs from other boosting algorithms due to its regularization techniques, which help prevent overfitting and improve generalization.
+            </p>
+
+            <h2>Key Features of XGBoost</h2>
+            <ul>
+                <li><strong>Speed:</strong> XGBoost is known for its fast computation time, especially when dealing with large datasets.</li>
+                <li><strong>Accuracy:</strong> It often outperforms other algorithms in prediction tasks, making it the go-to choice in many Kaggle competitions.</li>
+                <li><strong>Regularization:</strong> XGBoost includes L1 (Lasso) and L2 (Ridge) regularization, which helps prevent overfitting.</li>
+                <li><strong>Handling Missing Values:</strong> It automatically learns the best way to handle missing data.</li>
+            </ul>
+
+            <h2>How XGBoost Works</h2>
+            <p>
+                XGBoost works by sequentially building decision trees, where each tree attempts to correct the errors of the previous one. The model minimizes the loss function using gradient descent optimization.
+            </p>
+            <ul>
+                <li><strong>Step 1:</strong> Initialize the model with a simple prediction (like the mean of the target variable).</li>
+                <li><strong>Step 2:</strong> Calculate the residual errors (difference between actual and predicted values).</li>
+                <li><strong>Step 3:</strong> Fit a decision tree to the residuals.</li>
+                <li><strong>Step 4:</strong> Update the predictions by adding the predictions from the new tree.</li>
+                <li><strong>Step 5:</strong> Repeat the process to build a sequence of trees that gradually improve the model's predictions.</li>
+            </ul>
+
+            <h2>Advantages of XGBoost</h2>
+            <p>
+                XGBoost's main advantages include its ability to handle large datasets efficiently, prevent overfitting through regularization, and work well with both classification and regression problems. It also provides advanced features like early stopping and parallelization for faster training.
+            </p>
+
+            <h2>Conclusion</h2>
+            <p>
+                XGBoost is a powerful and highly efficient machine learning algorithm widely used in practice for its speed and predictive accuracy. Its built-in regularization techniques make it robust and capable of handling complex datasets, making it a popular choice for competitive machine learning tasks.
+            </p>
+        </article>
+    </section>
+</body>
+</html>
