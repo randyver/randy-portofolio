@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #005a9e;
+    background: #0d395a;
     color: #fff;
     line-height: 1.6;
 }
@@ -51,7 +51,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 10%;
-    background: #005a9e;
+    background: #0d395a;
     color: #fff;
     text-align: left;
 }
